@@ -48,30 +48,40 @@ Import Libraries: Necessary libraries like pandas and scikit-learn will be impor
 - from sklearn.linear_model import LinearRegression
 
 Load Data: Load the bike-sharing dataset using pandas.
-   
+
+![image](https://github.com/user-attachments/assets/fbee4e02-8c8a-4eeb-aec4-c8e92c01a207)
+
 Explore Data: Analyze basic statistics of the data to understand its characteristics and create new features or modify existing ones if it improves the model.
 The 'dtype' column  is conveted into a datetime format for easier manipulation, then extracts only the day of the month from the date column because it has existing column for month and year. The 
 unnecessary columns are removed, while the cnt column is renamed into total counts, and reorders the columns for better readability.
+
+![image](https://github.com/user-attachments/assets/ef902978-bb21-4763-aadd-128d47885319)
     
 #### 2. Model Implementation
 
 Split Data: Divide the data into training and testing sets. The training set will be used to build the model, and the testing set will be used to evaluate its performance on unseen data.
+
 Define Model: Create a linear regression model instance using Scikit-learn's LinearRegression class.
+
 Train Model: Fit the model on the training data.
+
 Predict: Use the trained model to predict bike rentals on the testing data.
+
+![image](https://github.com/user-attachments/assets/9b972e9f-f701-4f23-81fc-b861f48002f7)
 
 #### 3. Evaluation Metrics
 
 Calculate R-squared and adjusted R-squared to assess how well the model explains the variance in the actual bike rentals.
 
-### Results
+![image](https://github.com/user-attachments/assets/0ec5efdf-0280-4e7d-85a0-fc2bf4f7019b)
 
+### Results
+In making the prediction of a single data point, the data (season, yr, mnth, day, holiday, weekday, workingday, weathersit, temp, atemp, hum, and windspeed) in row 10 were used. The result shows that during this condition the total bike rent can be 1333, while the data in row 10 with the same conditon has a total count of 1321 bike rented during that day.
 
     
 ### Discussion
 
-    Reflect on the results and the limitations of the model.
-    Discuss the significance of the features in predicting bike rentals.
+The R-Squared of 0.8303 means that approximately 83% of the variation in bike rentals can be explained by the independent variables in the model. The adjusted R-Squared of 0.8151 suggests that, after accounting for the number of predictors, about 81.5% of the variation in bike rentals can be explained by the model. However, key factors influencing the count of bike rentals per day such as weather conditions, importatnt events, time-based factors, and holiday/working days. To improve the model utilize advanced techniques, incorporate external factors, and address importatnt events.
 
 # Logistic Regression
 
