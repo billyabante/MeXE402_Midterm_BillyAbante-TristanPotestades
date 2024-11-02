@@ -161,7 +161,15 @@ To predict the likelihood of a banknote being counterfeit, the model utilized th
 An accuracy of 0.98 implies that approximately 98% of the variations in banknote authenticity can be attributed to the features included in the model. The precision of 0.95 indicates that a high proportion of predicted legitimate notes are indeed authentic, while a recall of 0.92 reveals that the model correctly identifies 92% of actual legitimate notes. This performance highlights the influence of critical factors, such as the statistical properties of the banknotes and their distinguishing features. To enhance the model further, it is recommended to explore more complex algorithms, integrate additional relevant features, and consider external influences that may affect banknote authenticity, such as production anomalies or regional variations in currency.
 
 
+### Reference
 
+## Bike sharing dataset
+
+ https://www.kaggle.com/datasets/lakshmi25npathi/bike-sharing-dataset
+
+## Bank note authentication
+
+ https://www.kaggle.com/datasets/ritesaluja/bank-note-authentication-uci-data 
 
 
 
