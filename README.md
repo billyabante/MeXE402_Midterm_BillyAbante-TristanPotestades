@@ -151,7 +151,8 @@ Predict: Use the trained model to predict whether a banknote is legitimate or co
 
 Calculate Accuracy and Confusion Matrix: Evaluate model performance by calculating the accuracy score and visualizing the confusion matrix. These metrics help assess the model's ability to classify banknotes as legitimate or counterfeit accurately.
 
-![image](https://github.com/user-attachments/assets/3b8cdc3d-2447-4dae-8b66-d2a0bf48cf44)
+![image](https://github.com/user-attachments/assets/56da867f-eb16-4cff-bd08-ecce956c16b5)
+
 
 ## Results
 To predict the likelihood of a banknote being counterfeit, the model utilized the features from a specific data instance, including variance, skewness, curtosis, and entropy from row 10. The prediction indicated that under these specific conditions, the model suggests a classification of the banknote as legitimate, with a predicted probability of authenticity being 0.95. In comparison, the actual classification for the banknote in row 10 confirmed it as a genuine note, which supports the model's predictive capabilities.
